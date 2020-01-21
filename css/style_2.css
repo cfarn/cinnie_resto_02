@@ -1,0 +1,84 @@
+/* feuille de style Ce Soir TP */
+/* google font utilisées dans le style caveat, brush */
+body {
+    /* background-image: url(img/motif.jpg); */
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* id conteneur pour le contenu principal */
+#conteneur {
+    width: 1000px;
+    margin: 0 auto;
+    background: url(../img/motif.jpg)
+}
+
+/* en-tête et pied de page */
+header {
+    background-image: url(../img/planches.jpg);
+    height: 500px;
+    /* text-align: left; */
+}
+
+header h1, footer h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    height: 150px;
+    width: 50%;
+    margin: auto;
+}
+
+/* la nav */
+nav {
+    height: 50px;
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: space-around; */
+}
+
+nav li {
+    display: inline;
+    text-align: right;
+    font-weight: bold;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* mise en place du zoning */
+.sous_section {
+    height: 500px;
+    width: 500px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* .texte1, .texte3 {
+    height: 450px;
+    width: 400px;
+}
+
+.texte2 {
+    height: 450px;
+    width: 300px;
+}
+
+
+.p1, .p3 {
+    height: 450px;
+    width: 500px;
+}
+
+.p2 {
+    width: 600px;
+}
+
+footer {
+    height: 300px;
+} */
