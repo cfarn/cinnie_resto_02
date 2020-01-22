@@ -1,46 +1,102 @@
-/* feuille de style Ce Soir TP */
-/* google font utilisées dans le style caveat, brush */
-body {
-    /* background-image: url(img/motif.jpg); */
-    font-family: 'Caveat Brush', cursive;
-    font-size: 1em;
+* {
+    /* voir https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing */
     box-sizing: border-box;
 }
 
-/* id conteneur pour le contenu principal */
-#conteneur {
-    width: 1000px;
-    margin: 0 auto;
-    background: url(../img/motif.jpg)
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-/* en-tête et pied de page */
+/* *******************debut************************ */
+
+body {
+    background: linen;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1em;
+}
+
+#conteneur {
+    background-image: url(../img/motif.jpg);
+    width: 1000px;
+    margin: 0 auto;
+}
+
 header {
-    background-image: url(../img/planches.jpg);
-    height: 500px;
-    /* text-align: left; */
+    height: 600px;
+    background: url(../img/planches.jpg);
 }
 
 header h1, footer h1 {
+    font-size: 3em;
     text-transform: uppercase;
-    font-size: 2em;
-    height: 150px;
-    width: 50%;
-    margin: auto;
+    margin-left: 10px;
+    padding: 10px 20px;
 }
 
-/* la nav */
+header img {
+    margin: auto;
+    display: block;
+}
+
 nav {
-    height: 50px;
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: space-around; */
+    width: 500px;
+    margin-right: 30px;
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    
 }
 
 nav li {
     display: inline;
-    text-align: right;
-    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    padding-left: 20px;
 }
 
 nav li a {
@@ -48,55 +104,101 @@ nav li a {
     text-decoration: none;
 }
 
-/* mise en place du zoning */
-.sous_section {
-    /* height: 500px;
-    width: 500px; */
+header .fas {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: firebrick;
+}
+
+/* .cerf img {
+    z-index: 2;
+    position: relative;
+    left: 60px;
+}
+#triangle {
+    z-index: 1;
+    border-top : 100px solid #CC0066;
+    border-left : 100px solid transparent;
+    display : inline-block;
+    position: relative;
+    top: 20px;
+    right: 70px;
+} */
+
+.centre {
     float: left;
+    /* width: 500px; */
+    height: 500px;
 }
 
 .clear {
     clear: both;
 }
 
-.texte1, .texte3 {
-    height: 450px;
-    width: 40%;
-}
-
-.texte2 {
-    height: 450px;
-    width: 30%;
-}
-
-.p1 {
-    background: url(../img/asperge.jpg) no-repeat;
-    /* object-position: 50% 50%; */
-}
-
-.p2 {
-    background: url(../img/savon.jpg) no-repeat;
-    /* object-position: 50% 50%; */
-}
-
-.p3 {
-    background: url(../img/moule.jpg) no-repeat;
-    /* object-position: 50% 50%; */
-}
-
 .p4 {
-    background: url(../img/oeuf.jpg) no-repeat;
+    width: 1000px;
+    height: 600px;
     float: left;
 }
 
-/* .p1, .p3 {
-    width: 60%;
+.t1, .t3 {
+    width: 342px;
+}
+
+.p1, .p3 {
+    width: 658px;
+}
+
+.t2 {
+    width: 325px;
 }
 
 .p2 {
-    width: 70%;
-} */
+    width: 675px;
+}
+
+.t1, .t2, .t3 {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.t1 {
+    padding: 160px 30px;
+}
+
+span {
+    color: firebrick;
+}
 
 footer {
     height: 300px;
+    margin: 60px 50px;
+}
+
+footer address p a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer address {
+    padding: 50px 30px;
+}
+
+footer .reseaux {
+    text-align: right;
+}
+
+.fab {
+    color: firebrick;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h2 a {
+   color: #000;
+   text-decoration: none; 
 }

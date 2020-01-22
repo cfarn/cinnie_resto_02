@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ce Soir</title>
-    <!-- typo google font embarquée -->
+    <title>Ce Soir - tp 02</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
-    <!-- la font awesome embarquée -->
     <script src="https://kit.fontawesome.com/8c2ff7a14f.js" crossorigin="anonymous"></script>
-    <!-- lien pour la feuille de style -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- reset Eric Meyer -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">    
 </head>
-<!-- corps du document -->
 <body>
-    <!-- cette div contient l'ensemble de la page -->
     <div id="conteneur">
-        <!-- zone haute de la page -->
         <header>
-            <h1>Ce Soir</h1>
-            <!-- zone de menu -->
+            <h1 id="haut">Ce Soir</h1>
+            <img src="img/cerf.svg" alt="" height="180" width="180">
+            <!-- <div id="triangle"></div> -->
+            <i class="fas fa-caret-left fa-10x"></i>
+            
             <nav>
                 <ul>
                     <li><a href="#story">Our Story</a></li>
@@ -29,50 +24,61 @@
                     <li><a href="#drink">Drink</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+             </nav>
+            <p><i class="fas fa-chevron-down fa-7x"></i></p>
         </header>
-        
-        <!-- contenu principal -->
-        <main>
-            <section>
-                <div id="story" class="sous_section texte1">
-                    <h2>Our Story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur dolores minus neque doloremque. Repellat repellendus aliquid officiis ratione odio cum nulla est, dicta tenetur corrupti soluta quam, autem consequuntur!</p>
-                </div>
-                <div class="sous-section p1">
-                    <!-- <img src="img/asperge.jpg" alt=""> -->
-                </div>
-            </section>
-            <section>
-                <div class="sous_section p2">
-                    <!-- <img src="img/savon.jpg" alt=""> -->
-                </div>
-                <div id="fare" class="sous_section texte2">
-                    <h2>Fresh Fare</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur dolores minus neque doloremque. Repellat repellendus aliquid officiis ratione odio cum nulla est, dicta tenetur corrupti soluta quam, autem consequuntur!</p>
-                </div>
-            </section>
-            <section>
-                <div id="drink" class="sous_section texte3">
-                    <h2>Local Distillation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur dolores minus neque doloremque. Repellat repellendus aliquid officiis ratione odio cum nulla est, dicta tenetur corrupti soluta quam, autem consequuntur!</p>
-                </div>
-                <div class="sous_section p3">
-                    <!-- <img src="img/moule.jpg" alt=""> -->
-                </div>
-            </section>
-            <section class="p4">
-                <!-- <img src="img/oeuf.jpg" alt=""> -->
-            </section>
-            <!-- pour rétablir le flux normal -->
-            <div class="clear"></div>
-        </main>
+        <section>
+            <div id="story" class="t1 centre">
+                <h2><a href="#">Story</a></h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique id doloribus, fugit ex sunt eveniet harum molestias iusto animi odit nesciunt, officia sint molestiae maiores ipsa at. Laborum, veritatis quaerat!</p><br>
+                <span>Est. 2004</span>
+            </div>
+            <div class="p1 centre">
+                <img src="img/asperge.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="p2 centre">
+                <img src="img/savon.jpg" alt="">
+            </div>
+            <div id="fare" class="t2 centre">
+                <img src="img/graines_01.jpg" alt="">
+                <h2><a href="#">Fresh Fare</a></h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur dolores minus neque doloremque. Repellat repellendus aliquid officiis ratione odio cum nulla est, dicta tenetur corrupti soluta quam, autem consequuntur!</p><br>
+                <span>All natural</span>
+            </div>
+        </section>
+        <section>
+            <div id="drink" class="t3 centre">
+                <img src="img/graines_02.jpg" alt="">
+                <h2><a href="#">Local Distillation</a></h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur dolores minus neque doloremque. Repellat repellendus aliquid officiis ratione odio cum nulla est, dicta tenetur corrupti soluta quam, autem consequuntur!</p><br>
+                <span>Craft liquor</span>
+            </div>
+            <div class="p3 centre">
+                <img src="img/moule.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="p4">
+                <img src="img/oeuf.jpg" alt="">
+            </div>
+        </section>
+        <!-- pour rétablir le flux normal -->
+        <div class="clear"></div>
         <!-- pied de page -->
         <footer>
             <h1>Ce Soir</h1>
-            <address id="contact"></address>
+            <address id="contact">
+                <p><a href="#">150 rue de la villette 75019 Paris</a></p>
+                <p>01 48 00 00 00</p>
+            </address>
+            <div class="reseaux">
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
         </footer>
     </div>
-    
 </body>
 </html>
