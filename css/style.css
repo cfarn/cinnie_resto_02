@@ -78,6 +78,12 @@ header h1, footer h1 {
     padding: 10px 20px;
 }
 
+header hr {
+    width: 5px;
+    color: firebrick;
+    font-weight: 3px;
+}
+
 header img {
     margin: auto;
     display: block;
