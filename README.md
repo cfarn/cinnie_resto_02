@@ -1,4 +1,4 @@
-# cinnie_resto_02
+# resto_02
 # Intégration
 
 Intégration de la maquette du restaurant *Ce soir*
